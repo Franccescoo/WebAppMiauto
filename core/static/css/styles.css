@@ -1,0 +1,8 @@
+body {
+  background-color: lightblue;
+  font-family: verdana;
+}
+
+.imagen {
+  background-image: url(../img/image.jpg);
+  }
