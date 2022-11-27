@@ -15,8 +15,61 @@
 
 </head>
 <body >
+  <!-- <div>
+    <h4>MiAuto</h4>
+  </div> -->
 
-  <img src="{% static 'img/image.jpg' %}" style="width: 100%; height: 90%;">
+  <!-- <img src="{% static 'img/image.jpg' %}" style="width: 100%; height: 90%;"> -->
+
+  <div class="BannerHome"> 
+    <nav>
+        <div class="contenedor">
+            <div class="containerLeft">
+                <h2 style="margin-top: -100px;">SERVIEXPRESS</h2>
+            </div>
+            <div class="containerRight">
+                <div class="containerlinks">
+                    <a href="">Servicios</a>
+                    <a href="#">Agendar Reserva</a>
+                    <a href="#">Ver Mis reservas</a>
+                    {%if usuario.idTipo.tipo == "Empleado" %}
+                    <a href="#">Lista de reservas</a>
+                    {% endif %}
+                    <a href="#">Cerrar Sesion</a>
+                </div>
+            </div>
+    </nav>
+
+
+    <div class="containerHeader">
+        <div class="containerMain contenedor">
+            <div class="item">
+                <h1>PROFESIONALES DE LA MECÁNICA A TU DISPOSICIÓN.</h1>
+                <p>Sabías que...
+                    <br><br>
+                    En ServiExpress® nos comprometemos con nuestros clientes, ofreciendo tecnología y mano de obra
+                    óptima,
+                    brindamos los mejores repuestos del mercado y contamos con profesionales certificados que se
+                    empeñarán en dar lo mejor de sí,
+                    para otorgar un resultado brillante, económico y de alta calidad.
+
+                    <br><br>
+                    Somos una empresa que partió como un pequeño taller mecánico y que ahora cuenta con su propia
+                    página web,
+                    la cual fue desarrollada especialmente para la confianza y comodidad de nuestros clientes.
+
+                    <br><br>
+                    <link rel="shortcut icon" type="image/x-icon" href="#">
+
+                </p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
 
   
 </body>
