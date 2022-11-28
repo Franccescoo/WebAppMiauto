@@ -22,6 +22,18 @@
     * {
       box-sizing: border-box;
     }
+
+    @media handheld, only screen and (max-width: 767px) {
+.search_and_share{
+display:none;
+}
+}
+
+@media only screen and (max-width: 1023px) {
+.search_and_share{
+display:none;
+}
+}
     
     .column {
       float: left;
@@ -61,7 +73,7 @@
         padding-top: 200px;
         padding-left: 200px;
     ">
-            <img src="{% static 'img/iphonetwo.png' %}">
+            <img src="{% static 'img/iphonetwo.png' %}" class="search_and_share">
         </div>
     </div>
 </div>
